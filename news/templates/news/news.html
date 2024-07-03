@@ -1,0 +1,22 @@
+<!-- news/templates/news/news.html -->
+{% extends "my_app/base.html" %}
+{% block title %}Новости{% endblock %}
+{% block content %}
+<h1 class="mb-4">Новости</h1>
+<div class="row">
+    {% for post in news %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ post.creator }} - {{ post.created_at }}</h6>
+                    <p class="card-text">{{ post.short_description }}</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>Нет новостей для отображения.</p>
+    {% endfor %}
+</div>
+{% endblock %}
