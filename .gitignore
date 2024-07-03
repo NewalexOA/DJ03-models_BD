@@ -1,0 +1,75 @@
+# Игнорирование файлов компиляции Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Игнорирование файлов настройки окружения
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Игнорирование файлов базы данных SQLite
+*.sqlite3
+
+# Игнорирование директорий миграций
+**/migrations/
+
+# Игнорирование файлов настройки IDE
+.idea/
+.vscode/
+
+# Игнорирование логов
+*.log
+
+# Игнорирование данных статических файлов (если они генерируются автоматически)
+staticfiles/
+
+# Игнорирование собранных медиа файлов
+media/
+
+# Игнорирование файлов тестовых отчетов
+*.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Игнорирование временных файлов и директорий
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Игнорирование директорий, содержащих настройки Docker
+docker-compose*.yml
+Dockerfile
+
+# Игнорирование файлов и директорий, созданных при развертывании
+*.pid
+*.seed
+*.pid.lock
+
+# Игнорирование файлов конфигурации celery
+celerybeat-schedule
+celerybeat.pid
+
+# Игнорирование директорий кэша
+*.egg-info/
+*.eggs/
+
+# Игнорирование файлов тестов
+.pytest_cache/
+.tox/
+.coverage
+.pytest_cache/
+.cache/
+dist/
+build/
